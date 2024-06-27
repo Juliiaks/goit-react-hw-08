@@ -7,6 +7,9 @@ import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchContacts } from './redux/contactsOps'
 import { getIsLoading, getError } from './redux/contactsSlice'
+import NavBar from './components/Navigation/navigation'
+import { Route, Routes } from 'react-router-dom'
+
 function App() {
   const dispatch = useDispatch();
    const isLoading = useSelector(getIsLoading);
@@ -18,6 +21,12 @@ function App() {
 
   return (
     <>
+      <NavBar />
+      <Routes>
+        <Route path='/' element={} />
+        <Route path='/contacts' element={}/>
+      </Routes>
+
       <ContactForm />
       <SearchBox/>
     <ContactsList/>
