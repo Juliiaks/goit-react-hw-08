@@ -9,6 +9,7 @@ import { lazy } from 'react'
 import AppBar from './components/AppBar/AppBar'
 import RegistrationPage from './pages/RegistrationPage'
 import HomePage from './pages/HomePage'
+import LoginPage from './pages/LoginPage'
 
 
 // const HomePage = lazy(() => import('./pages/HomePage'))
@@ -28,7 +29,7 @@ function App() {
       <AppBar />
       <Routes>
         <Route path='/' element={<HomePage/>} />
-          <Route path='/login' element={ <></>} />
+          <Route path='/login' element={ <LoginPage/>} />
           <Route path='/register' element ={<RegistrationPage/>}/>
         <Route path='/contacts' element={<></>}/>
       </Routes>
