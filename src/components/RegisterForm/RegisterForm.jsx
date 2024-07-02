@@ -3,7 +3,7 @@ import { useId } from "react"
 import { useDispatch } from "react-redux"
 
 
-export default function RegisterForm() {
+export default function RegisterForm(submit) {
     const dispatch = useDispatch()
     
     const nameId = useId()
@@ -12,7 +12,8 @@ export default function RegisterForm() {
 
     const handleSubmit = (values, actions) => {
         console.log('Submitted values:', values);
-        dispatch(register(values))
+        // dispatch(register(values))
+        submit(values)
         actions.resetForm()
     }
         
