@@ -4,7 +4,7 @@ import { number } from "yup";
 
 // import { fetchingInProgress, fetchingSuccess, fetchingError } from "./contactsSlice";
 
-axios.defaults.baseURL = "https://6676ab04145714a1bd7270a3.mockapi.io"
+// axios.defaults.baseURL = "https://6676ab04145714a1bd7270a3.mockapi.io"
 
 export const fetchContacts = createAsyncThunk(
     'contacts/fetchAll',

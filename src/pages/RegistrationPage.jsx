@@ -4,15 +4,15 @@ import { registerOperation } from "../redux/auth/operations";
 
 export default function RegistrationPage() {
 
-    const dispach = useDispatch();
+    const dispatch = useDispatch();
     
-    const register = (userData) => {
-dispach(registerOperation(userData))
+    const registerUser = (userData) => {
+dispatch(registerOperation(userData))
     }
 
     return (
         <div>
-            <RegisterForm submit={register} />
+            <RegisterForm submit={registerUser} />
         </div>
     )
 }

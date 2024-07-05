@@ -6,8 +6,7 @@ import { ErrorMessage } from "formik";
 import css from "./contactForm.module.css"
 import { useDispatch } from 'react-redux';
 // import { addContacts } from '../../redux/contactsSlice';
-import { addContact } from "../../redux/contactsOps";
-
+import { addContact } from "../../redux/contacts/operations";
 
 
 export default function ContactForm() {
