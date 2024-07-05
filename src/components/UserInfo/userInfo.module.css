@@ -1,0 +1,23 @@
+.info{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.text{
+    color: aqua;
+    font-weight: 600;
+}
+
+.btn{
+    background-color: #10afc8ac;
+    height: 45px;
+    width: 150px;
+
+    font-size: 24px;
+    font-weight: 600;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

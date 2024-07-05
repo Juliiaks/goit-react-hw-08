@@ -1,0 +1,28 @@
+.nav{
+    display: flex;
+    gap: 100px;
+}
+
+.link {
+    color: aqua;
+    font-size: 20px;
+    border: 1px solid transparent;
+    padding: 5px 8px;
+    padding-top: 2px;
+
+}
+
+.link:hover {
+    border: 1px solid aqua;
+    /* padding: 5px 8px;
+    padding-top: 2px; */
+    border-radius: 15px;
+}
+
+.isActive {
+    background-color: #10afc8ac;
+    padding: 5px 8px;
+    padding-top: 2px;
+    color: #242424;
+    border-radius: 15px;
+}
