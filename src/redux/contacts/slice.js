@@ -2,6 +2,7 @@ import { createSlice, nanoid } from "@reduxjs/toolkit"
 import { number } from "yup";
 import { addContact, deleteContact, fetchContacts } from "./operations";
 import { createSelector } from "@reduxjs/toolkit";
+import { logOut } from "../auth/operations";
 
 
 // const initialContacts = {
@@ -52,7 +53,12 @@ const contactSlice = createSlice(
                     state.error = null;
                     state.items = state.items.filter(contact => contact.id !== action.payload);
                 })
-                .addCase(deleteContact.rejected, handleRejected);
+            .addCase(deleteContact.rejected, handleRejected)
+          .addCase(logOut.fulfilled, (state) => {
+        state.items = [];
+        state.error = null;
+        state.isLoading = false;
+      });
            
             // deleteContact(state, action) {
             //     state.items = state.items.filter(contact => contact.id !== action.payload);

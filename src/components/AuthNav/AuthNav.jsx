@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 import css from "./auth.module.css"
 import clsx from "clsx";
 
-export default function Authorization() {
+export default function AuthNav() {
     return (
         <div className={css.auth}> 
         <NavLink to="/login" className={({ isActive }) => {
